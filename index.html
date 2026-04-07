@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Monitoring IoT - Sistem Membran</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="header-left">
+    <img src="Institut_Teknologi_Sepuluh_Nopember_logo.png" alt="logo" class="logo">
+    <div>
+      <h2>Monitoring IoT - Sistem Membran</h2>
+      <p>Real-time Water Quality Monitoring</p>
+    </div>
+</div>
+    <button id="startBtn">● Start Recording</button>
+  </header>
+
+  <div class="cards">
+    <div class="card">
+      <h4>pH Level</h4>
+      <p class="range">Optimal: 6.0 - 7.0</p>
+      <h1 id="ph">6.39</h1>
+      <span class="status">● Normal</span>
+    </div>
+
+    <div class="card">
+      <h4>TDS</h4>
+      <p class="range">Optimal: &lt; 300 ppm</p>
+      <h1 id="tds">237</h1>
+      <span class="status">● Normal</span>
+    </div>
+
+    <div class="card">
+      <h4>Turbidity</h4>
+      <p class="range">Optimal: &lt; 15 NTU</p>
+      <h1 id="turbidity">6.5</h1>
+      <span class="status">● Normal</span>
+    </div>
+
+    <div class="card">
+      <h4>Temperature</h4>
+      <p class="range">Optimal: 25 - 30°C</p>
+      <h1 id="temp">28.3</h1>
+      <span class="status">● Normal</span>
+    </div>
+  </div>
+
+  <div class="chart">
+  <canvas id="myChart"></canvas>
+</div>
+
+  <footer>
+    <p>© 2026 Institut Teknologi Sepuluh Nopember</p>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
